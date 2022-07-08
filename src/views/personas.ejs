@@ -1,0 +1,11 @@
+<% if (personas.length) {%>
+    <ul>
+        <% personas.forEach(nombre => {%>
+            <li>
+                <%= nombre %>
+            </li>
+            <% }) %>
+    </ul>
+    <% } else { %>
+        <p style="color:red">No hay personas cargadas</p>
+        <% } %>
